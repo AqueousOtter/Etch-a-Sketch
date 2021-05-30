@@ -19,10 +19,11 @@ body {
 #container div {
     width: auto;
     margin: auto;
+    flex: 1;
 }
 
 .cells {
-    flex: 1;
+
     background-color: #FFF;
 }
 
