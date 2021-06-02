@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Etch-A-Sketch</title>
+  <title>Pixel-Sketch</title>
   <meta charset="UTF-8"/>
   <link rel="stylesheet" href="./styles.css">
-
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico">
 </head>
 <body>
-  <h1>Etch-A-Sketch</h1>
+  <h1>Pixel ~ Sketch</h1>
   <section>
-    <div id="menu">
-      <button id="pixie">Pixie</button>
-      <button id="sunset">Sunset</button>
-      <button id="earth">Earth</button>
-      <button id="synthWave">SynthWave</button>
-      <button id="pastel">Pastel</button>
+    <div id="menu-right">
+      <ul>
+      <h2>Color Palette</h2>
+      <li><button id="pixie">Pixie</button></li>
+      <li><button id="sunset">Sunset</button></li>
+      <li><button id="earth">Earth</button></li>
+      <li><button id="synthWave">SynthWave</button></li>
+      <li><button id="pastel">Pastel</button></li>
+      </ul>
+      <br>
     </div>
+    <div id="menu-left">
+      <ul>
+      <h2>Pixel Size:</h2>
+      <li><button id="small">Small</button></li>
+      <li><button id="regular">Regular</button></li>
+      <li><button id="medium">Medium</button></li>
+      <li><button id="large">Large</button></li>
+      <li><button id="custom">Custom</button></li>
+      </ul>
+    </div>
+
     <div id="container">
     </div>
-  </section>
-    <script src="./scripts.js"></script>
-</body>
 
+    <br>
+    <button id="reset">RESET</button>
+  </section>
+  <br>
+  <br>
+  <p>Made by: <a href="https://github.com/AqueousOtter">AqueousOtter</a></p>
+</body>
+<footer><script src="./scripts.js"></script>
+</footer>
 </html>

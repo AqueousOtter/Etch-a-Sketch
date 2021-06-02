@@ -1,33 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
 html {
+    font-family: 'Reenie Beanie', cursive;
     height: 100%;
-    background-image: linear-gradient(to bottom right, cyan, rgb(96, 255, 109));
+    background-image: linear-gradient(to bottom right, cyan, aquamarine);
     background-repeat: no-repeat;
 }
-
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
     text-align: center;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
+    border: transparent 1px solid;
+}
+
+
+h1 {
+    font-size: 55px;
+    border: solid;
+    width: 25%;
+    text-align: center;
+    margin: 5% auto;
+    border-radius: 15px;
+    background: #FFF;
+    padding: 10px;
+}
+h2 {
+    font-size: 35px;
+    padding: 10px;
+}
+p{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+ul {
+    width: 100%;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+button {
+    width: 90px;
+    height: 40px;
+    background-color: white;
+    opacity: 0.8;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 5px 5px;
+    font-size: 25px;
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: 900;
+}
+button:hover{
+    opacity: 1;
+}
+button:active {
+    box-shadow: 3px 3px #000;
+    transform: translateY(4px);
+  }
+#menu-right {
+    float: right;
+}
+#menu-right h2 {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.897);
+    box-shadow: 3px 5px;
+}
+#menu-left{
+    float: left;
+
+}
+#menu-left h2 {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.897);
+    box-shadow: 3px 5px;
+}
+#menu-left button, #menu-right button {
+    width: 100%;
 }
 
 #container {
-    display: flex; /* for flex grid */
-    width: 40%;
+    float: none;
+    height: 500px;
+    width: 800px;
     margin: auto;
-    border: solid black 3px;
+    border: solid black 2px;
+    box-shadow: 3px 3px 5px 3px rgb(44, 44, 44);
 }
-#container div {
-    width: auto;
-    margin: auto;
-    flex: 1;
+#container .row{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
 }
-
+#reset {
+    background-color: red ;
+}
+#reset:active {
+    background-color: red;
+    box-shadow: 3px 3px #000;
+    transform: translateY(4px);
+  }
+#pixie {
+    background-color: #FFAFCC;
+}
+#sunset {
+    background-color: #ff7f51;
+}
+#earth {
+    background-color: #a98467;
+}
+#pastel {
+    background-color: #f5f2b8;
+}
+#synthWave {
+    background-color: #f72585;
+}
 .cells {
-
+    width: 100%;
+    flex:  1 1 auto;
     background-color: #FFF;
 }
-
-/* .row, .cell {
-    width: 50px;
-    height: 50px;
-}  */
