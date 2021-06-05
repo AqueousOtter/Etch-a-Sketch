@@ -2,24 +2,21 @@
 
 html {
     font-family: 'Reenie Beanie', cursive;
-    height: 100%;
-    width: 100%;
     background-image: linear-gradient(to bottom right, cyan, aquamarine);
     background-repeat: no-repeat;
-
 }
 html, body {
-    height: auto;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-body {
-    text-align: center;
+    height: 100%;
+    overflow: auto;
 }
 
+body {
+    margin: 0;
+    text-align: center;
+}
 h1 {
     font-size: 55px;
+    box-shadow: 3px 3px #000;
     border: solid;
     width: 25%;
     text-align: center;
@@ -33,16 +30,13 @@ h2 {
     padding: 10px;
 }
 section {
-
     margin: 0;
     width: 100%;
-    height: 100%;
     display: flex
 }
 p{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-
 }
 a {
     text-decoration: none;
@@ -50,7 +44,6 @@ a {
     text-shadow: 2px 2px 4px #000;
 }
 ul {
-
     margin: auto;
     margin-right: 30px;
 }
@@ -64,7 +57,7 @@ button {
     width: 90px;
     height: 40px;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.6;
     border: none;
     border-radius: 25px;
     box-shadow: 5px 5px;
@@ -78,8 +71,19 @@ button:hover{
 button:active {
     box-shadow: 3px 3px #000;
     transform: translateY(4px);
-  }
-          
+}
+
+#menu-right, #menu-left {
+    margin: auto;
+    justify-content: center;
+    width: 15%;
+}
+#menu-right {
+    margin-right: 5%;
+}
+#menu-left {
+    margin-left: 5%;
+}
 #menu-right h2 {
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.897);
@@ -96,9 +100,8 @@ button:active {
 
 #container {
     position: relative;
-    clear: both;
     height: 500px;
-    width: 800px;
+    width: 50%;
     margin: auto;
     border: solid black 2px;
     box-shadow: 3px 3px 5px 3px rgb(44, 44, 44);
